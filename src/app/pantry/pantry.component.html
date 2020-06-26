@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Minha despensa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>  
+    <ion-content fullscreen>
+      <ion-list>
+          <ion-item *ngFor="let food of this.registerFoodService.foodList;let i=index" #ival>
+           <ion-label>
+            <h2 #nome>Nome: {{food.name}}</h2>
+            <p>Quantidade: {{food.qtd}}</p>
+           <p><b>Validade: </b> {{food.date | date:'dd/MM/yyyy' }}</p>
+           <ion-button (click)="removeItem(i)"><ion-icon name="trash-outline"></ion-icon></ion-button>
+           <ion-button (click)="teste(i)"><ion-icon name="settings-outline"></ion-icon></ion-button>
+           </ion-label>
+          </ion-item>
+    </ion-list>
+    </ion-content>

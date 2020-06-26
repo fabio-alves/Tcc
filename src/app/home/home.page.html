@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Good Food
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header [routerLink]="['/registerFood']">
+            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-title>Cadastro de Alimento</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header  [routerLink]="['/pantry']">
+            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-title>Minha Despensa</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header [routerLink]="['']">
+            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-title>Alimentos a Vencer</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header [routerLink]="['/shoppingList']">
+            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-title>Lista de Compras</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

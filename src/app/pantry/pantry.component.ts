@@ -13,10 +13,12 @@ export class PantryComponent implements OnInit {
 
   ngOnInit() {}
 
-  teste(valueIndex:any) {
-    var lista = this.registerFoodService.foodList;
-    console.log(valueIndex);
- 
+  getIndex(valueIndex:any) {
+  /*  let a = this.registerFoodService.getIndex(valueIndex)
+    console.log("Sera",a);
+  */
+  this.registerFoodService.setIndex(valueIndex);
+
   }
 
   removeItem(valueIndex:any){

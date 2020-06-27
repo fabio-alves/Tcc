@@ -12,9 +12,10 @@ import { CommonModule } from '@angular/common';
 import { PantryComponent} from './pantry/pantry.component';
 import { RegisterFoodComponent} from './register-food/register-food.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { UpdateFoodComponent} from './update-food/update-food.component';
 
 @NgModule({
-  declarations: [AppComponent, PantryComponent, RegisterFoodComponent, ShoppingListComponent],
+  declarations: [AppComponent, PantryComponent, RegisterFoodComponent, ShoppingListComponent, UpdateFoodComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CommonModule],
   providers: [

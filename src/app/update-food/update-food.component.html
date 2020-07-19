@@ -10,16 +10,19 @@
 </ion-header>
 <ion-content [fullscreen]="true">
 <ion-item>
-  <ion-label>Nome</ion-label>
-  <ion-input #nome></ion-input>
+  <ion-label>Nome: </ion-label>
+  <ion-input #nome value="{{dado.name}}" ></ion-input>
 </ion-item>
 <ion-item>
-  <ion-label position="floating">Quantidade</ion-label>
-  <ion-input #qtd></ion-input>
+  <ion-label >Quantidade: </ion-label>
+  <ion-input #qtd value="{{dado.qtd}}"></ion-input>
 </ion-item>
 <ion-item>
-  <ion-label>Validade</ion-label>
+  <ion-label>Validade antiga : {{dado.data | date:'dd/MM/yyyy'}}</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>Nova Data</ion-label>
   <ion-datetime displayFormat="DD MM YY" min="2020-01-01" max="2030-12-31" placeholder="Select Date" #data></ion-datetime>
 </ion-item>
-<ion-button expand="full" (click)="presentAlert(nome.value, qtd.value, data.value)">Alterar</ion-button>
+<ion-button expand="full" (click)="presentAlert(nome.value, qtd.value, data.value)" (click)="nome.value = '' " (click)="qtd.value = '' " (click)="data.value = '' ">Salvar</ion-button>
 </ion-content>

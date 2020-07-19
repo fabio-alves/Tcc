@@ -1,24 +1,21 @@
-<ion-header [translucent]="true">
+<ion-header class="fundoHeader">
   <ion-toolbar>
     <ion-title>
+      <ion-icon class="iconBar"src="../assets/icon/pot.svg"></ion-icon>
       Good Food
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content class="fundo" [fullscreen]="true">
+ 
+<div class="fundo">
   <ion-grid>
     <ion-row>
       <ion-col>
         <ion-card>
           <ion-card-header [routerLink]="['/registerFood']">
-            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-subtitle><ion-icon src="../assets/icon/insert.svg"></ion-icon></ion-card-subtitle>
             <ion-card-title>Cadastro de Alimento</ion-card-title>
           </ion-card-header>
         </ion-card>
@@ -26,7 +23,7 @@
       <ion-col>
         <ion-card>
           <ion-card-header  [routerLink]="['/pantry']">
-            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-subtitle><ion-icon class="iconfood" src="../assets/icon/food.svg"></ion-icon></ion-card-subtitle>
             <ion-card-title>Minha Despensa</ion-card-title>
           </ion-card-header>
         </ion-card>
@@ -36,7 +33,7 @@
       <ion-col>
         <ion-card>
           <ion-card-header [routerLink]="['']">
-            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-subtitle><ion-icon class="iconfood" src="../assets/icon/firstOut.svg"></ion-icon></ion-card-subtitle>
             <ion-card-title>Alimentos a Vencer</ion-card-title>
           </ion-card-header>
         </ion-card>
@@ -44,11 +41,12 @@
       <ion-col>
         <ion-card>
           <ion-card-header [routerLink]="['/shoppingList']">
-            <ion-card-subtitle></ion-card-subtitle>
+            <ion-card-subtitle><ion-icon class="iconfood" src="../assets/icon/list.svg"></ion-icon></ion-card-subtitle>
             <ion-card-title>Lista de Compras</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+</div>
 </ion-content>
